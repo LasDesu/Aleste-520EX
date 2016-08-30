@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:aleste-rescue
 LIBS:mylib
 LIBS:power
 LIBS:device

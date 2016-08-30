@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:aleste-rescue
 LIBS:mylib
 LIBS:power
 LIBS:device
@@ -372,6 +371,8 @@ $Comp
 L 555ИД4 D74
 U 1 1 566097CA
 P 1400 2600
+AR Path="/566097CA" Ref="D74"  Part="1" 
+AR Path="/56762514/566097CA" Ref="D74"  Part="1" 
 F 0 "D74" H 1950 2750 60  0000 C CNN
 F 1 "555ИД4" H 1950 1650 50  0000 C CNN
 F 2 "MyLib:DIP-16" H 1700 2350 60  0001 C CNN

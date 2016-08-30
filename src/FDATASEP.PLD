@@ -1,0 +1,96 @@
+Name     FDataSep ;
+PartNo   00 ;
+Date     06.06.2016 ;
+Revision 01 ;
+Designer Las ;
+Company  Nope ;
+Assembly None ;
+Location  ;
+Device   g16v8a ;
+
+/* *************** INPUT PINS *********************/
+PIN 1 = clk;
+PIN 2 = ffq;
+PIN 11 = oe;
+
+/* *************** OUTPUT PINS *********************/
+PIN [12..15] = [fout0..3];
+PIN 16 = wrc;
+PIN 17 = rddo;
+PIN 18 = ffres;
+
+field fp = [fout3..0];
+/* define states */
+$define S0 0
+$define S1 1
+$define S2 2
+$define S3 3
+$define S4 4
+$define S5 5
+$define S6 6
+$define S7 7
+$define S8 8
+$define S9 9
+$define SA A
+$define SB B
+$define SC C
+$define SD D
+$define SE E
+$define SF F
+
+rddo.d = ffq;
+ffres = !rddo; /* fight with racing */
+
+rdd = rddo;
+
+sequence fp {
+	present S0:
+		next S1;
+	present S1:
+		if (rdd)	next S1;
+		default	next S2;
+	present S2:
+		if (rdd)	next S2;
+		default	next S3;
+	present S3:
+		if (rdd)	next S3;
+		default	next S4;
+	present S4:
+		if (rdd)	next S3;
+		default	next S5;
+	present S5:
+		if (rdd)	next S4;
+		default	next S6;
+	present S6:
+		if (rdd)	next S5;
+		default	next S7;
+	present S7:
+		if (rdd)	next S6;
+		default	next S8;
+	present S8:
+		if (rdd)	next SB;
+		default	next S9;
+	present S9:
+		if (rdd)	next SC;
+		default	next SA;
+	present SA:
+		if (rdd)	next SD;
+		default	next SB;
+	present SB:
+		if (rdd)	next SE;
+		default	next SC;
+	present SC:
+		if (rdd)	next SE;
+		default	next SD;
+	present SD:
+		if (rdd)	next SF;
+		default	next SE;
+	present SE:
+		if (rdd) 	next S0;
+		default	next SF;
+	present SF:
+		if (rdd)	next S1;
+		default	next S0;
+}
+
+wrc = fp:[0,1];

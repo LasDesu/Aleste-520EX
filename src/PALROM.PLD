@@ -1,0 +1,57 @@
+Name     GateDec ;
+PartNo   00 ;
+Date     26.06.2016 ;
+Revision 01 ;
+Designer Las ;
+Company  Home ;
+Assembly None ;
+Location  ;
+Device   g22v10;
+
+/* *************** INPUT PINS *********************/
+pin 1 = romclk;
+pin [2..9] = [d0..7];
+pin 10 = a13;
+pin 11 = a15;
+pin 14 = mapmod;
+pin 13 = oe;
+
+/* *************** OUTPUT PINS *********************/
+pin [23..18] = [xd5..0];
+pin 17 = vramacc;
+pin [16..15] = [rom1..0];
+
+field data = [d7..0];
+field val = [d4..0];
+field addr = [a15, a13];
+
+/* vramacc line */
+vramacc = addr:[0xxx,Axxx] & d7;
+append vramacc = addr:[2xxx] & data:[80..C3];
+
+/* XD bus */
+field dval = [xd5..0];
+
+/* palette */
+col5..0;
+field palette = [col5..0];
+table val => palette {
+	00=>15; 01=>15; 02=>1C; 03=>1F; 04=>10; 05=>13; 06=>14; 07=>17;
+	08=>13; 09=>1F; 0A=>0F; 0B=>3F; 0C=>03; 0D=>33; 0E=>07; 0F=>37;
+	10=>10; 11=>1C; 12=>0C; 13=>3C; 14=>00; 15=>30; 16=>04; 17=>34;
+	18=>11; 19=>1D; 1A=>0D; 1B=>3D; 1C=>01; 1D=>31; 1E=>05; 1F=>35;
+}
+dval = palette & !mapmod; /*& addr:[2xxx] & reg:[4x];*/
+append dval = [d5..0] & mapmod;
+
+/* rom */
+field rombank = [rom1..0]; /* actual on 8xxx */
+table data => rombank.d {
+	[00..02] => 'b'01;
+	03 => 'b'10;
+	[04..06] => 'b'01;
+	07 => 'b'11;
+	[08..FF] => 'b'01;
+}
+rombank.ar = 'b'00;
+rombank.sp = 'b'00;
