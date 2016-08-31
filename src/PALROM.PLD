@@ -29,17 +29,26 @@ field addr = [a15, a13];
 vramacc = addr:[0xxx,Axxx] & d7;
 append vramacc = addr:[2xxx] & data:[80..C3];
 
-/* XD bus */
-field dval = [xd5..0];
-
 /* palette */
+field dval = [xd5..0];
 col5..0;
 field palette = [col5..0];
+
+/* original non-uniform palette
 table val => palette {
 	00=>15; 01=>15; 02=>1C; 03=>1F; 04=>10; 05=>13; 06=>14; 07=>17;
 	08=>13; 09=>1F; 0A=>0F; 0B=>3F; 0C=>03; 0D=>33; 0E=>07; 0F=>37;
 	10=>10; 11=>1C; 12=>0C; 13=>3C; 14=>00; 15=>30; 16=>04; 17=>34;
 	18=>11; 19=>1D; 1A=>0D; 1B=>3D; 1C=>01; 1D=>31; 1E=>05; 1F=>35;
+}
+*/
+
+/* uniform but darker palette */
+table val => palette {
+	00=>15; 01=>15; 02=>18; 03=>1A; 04=>10; 05=>12; 06=>14; 07=>16;
+	08=>12; 09=>1A; 0A=>0A; 0B=>2A; 0C=>02; 0D=>22; 0E=>06; 0F=>26;
+	10=>10; 11=>18; 12=>08; 13=>28; 14=>00; 15=>20; 16=>04; 17=>24;
+	18=>11; 19=>19; 1A=>09; 1B=>29; 1C=>01; 1D=>21; 1E=>05; 1F=>25;
 }
 dval = palette & !mapmod; /*& addr:[2xxx] & reg:[4x];*/
 append dval = [d5..0] & mapmod;
