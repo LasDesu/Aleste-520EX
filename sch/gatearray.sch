@@ -485,6 +485,8 @@ $Comp
 L 555ИД4 D54
 U 1 1 56791C88
 P 3900 1500
+AR Path="/56791C88" Ref="D54"  Part="1" 
+AR Path="/5676251A/56791C88" Ref="D54"  Part="1" 
 F 0 "D54" H 4450 1650 60  0000 C CNN
 F 1 "555ИД4" H 4450 550 50  0000 C CNN
 F 2 "MyLib_metric:DIP-16" H 4200 1250 60  0001 C CNN
@@ -737,20 +739,14 @@ Text HLabel 8500 5200 0    60   Input ~ 0
 8M
 Text HLabel 8500 5300 0    60   Input ~ 0
 4M
-Text Label 10400 6100 2    60   ~ 0
-MVI
 Text Label 10400 5700 2    60   ~ 0
 8ST
 Text Label 10400 5800 2    60   ~ 0
 4ST
 Text Label 5800 2500 0    60   ~ 0
 RRC
-Text Label 5800 2600 0    60   ~ 0
-MVI
 Text Label 5800 4300 0    60   ~ 0
 RRC
-Text Label 5800 4400 0    60   ~ 0
-MVI
 $Comp
 L VCC #PWR036
 U 1 1 567BADF6
@@ -918,11 +914,7 @@ Entry Wire Line
 Entry Wire Line
 	5700 2400 5800 2500
 Entry Wire Line
-	5700 2500 5800 2600
-Entry Wire Line
 	5700 4200 5800 4300
-Entry Wire Line
-	5700 4300 5800 4400
 $Comp
 L 1802ИР1 D60
 U 1 1 567CB3B2
@@ -1511,8 +1503,6 @@ NoConn ~ 4000 8700
 NoConn ~ 4000 9400
 Text HLabel 3700 9600 0    60   Input ~ 0
 XTAL
-Text Label 3400 9900 0    60   ~ 0
-MVI
 $Comp
 L CAP C4
 U 1 1 567FA8D6
@@ -1588,8 +1578,6 @@ F 3 "" H 3900 7700 60  0000 C CNN
 $EndComp
 Entry Wire Line
 	3300 9000 3400 9100
-Entry Wire Line
-	3300 9800 3400 9900
 $Comp
 L 556РТ4 D28
 U 1 1 56807E92
@@ -1656,8 +1644,6 @@ Entry Wire Line
 	10400 5700 10500 5800
 Entry Wire Line
 	10400 5800 10500 5900
-Entry Wire Line
-	10400 6100 10500 6200
 Wire Wire Line
 	4000 10800 3900 10800
 Wire Wire Line
@@ -2050,7 +2036,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 5700 10400 5700
 Wire Wire Line
-	10200 6100 10400 6100
+	10200 6100 10250 6100
 Wire Wire Line
 	8500 5200 8800 5200
 Wire Wire Line
@@ -2075,11 +2061,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 2500 6400 2500
 Wire Wire Line
-	6400 2600 5800 2600
-Wire Wire Line
 	5800 4300 6400 4300
-Wire Wire Line
-	6400 4400 5800 4400
 Wire Wire Line
 	6200 2800 6400 2800
 Wire Wire Line
@@ -2404,8 +2386,6 @@ Wire Wire Line
 	3900 10100 4000 10100
 Wire Wire Line
 	3700 9600 4000 9600
-Wire Wire Line
-	3400 9900 4000 9900
 Wire Wire Line
 	4000 9800 3900 9800
 Wire Wire Line
@@ -3169,4 +3149,18 @@ F 3 "" H 1900 1250 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	3700 13200 4000 13200
+Text HLabel 10250 6100 2    60   Output ~ 0
+MVI
+Text HLabel 6200 2600 0    60   Input ~ 0
+MVI
+Wire Wire Line
+	6200 2600 6400 2600
+Text HLabel 6200 4400 0    60   Input ~ 0
+MVI
+Wire Wire Line
+	6200 4400 6400 4400
+Text HLabel 3700 9900 0    60   Input ~ 0
+MVI
+Wire Wire Line
+	3700 9900 4000 9900
 $EndSCHEMATC
