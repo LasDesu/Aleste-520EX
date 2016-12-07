@@ -591,11 +591,9 @@ Text HLabel 8500 5200 0    60   Input ~ 0
 8M
 Text HLabel 8500 5300 0    60   Input ~ 0
 4M
-Text Label 10400 6100 2    60   ~ 0
-MVI
-Text Label 10400 5700 2    60   ~ 0
+Text Label 10600 5700 2    60   ~ 0
 8ST
-Text Label 10400 5800 2    60   ~ 0
+Text Label 10600 5800 2    60   ~ 0
 4ST
 Text Label 5800 2500 0    60   ~ 0
 RRC
@@ -706,13 +704,13 @@ Text Label 8200 2500 0    60   ~ 0
 8ST
 Text HLabel 8500 2700 0    60   Input ~ 0
 8M
-Text Label 10400 3600 2    60   ~ 0
+Text Label 10600 3600 2    60   ~ 0
 PX1
-Text Label 10400 4500 2    60   ~ 0
+Text Label 10600 4500 2    60   ~ 0
 PX2
-Text Label 10400 1700 2    60   ~ 0
+Text Label 10600 1700 2    60   ~ 0
 PX3
-Text Label 10400 2600 2    60   ~ 0
+Text Label 10600 2600 2    60   ~ 0
 RRC
 Entry Wire Line
 	8000 4200 8100 4300
@@ -729,13 +727,13 @@ Entry Wire Line
 Entry Wire Line
 	8100 2100 8200 2200
 Entry Wire Line
-	10400 1700 10500 1800
+	10600 1700 10700 1800
 Entry Wire Line
-	10400 2600 10500 2700
+	10600 2600 10700 2700
 Entry Wire Line
-	10400 3600 10500 3700
+	10600 3600 10700 3700
 Entry Wire Line
-	10400 4500 10500 4600
+	10600 4500 10700 4600
 Entry Wire Line
 	5700 2400 5800 2500
 Entry Wire Line
@@ -1406,11 +1404,9 @@ $EndComp
 Entry Wire Line
 	8100 5600 8200 5700
 Entry Wire Line
-	10400 5700 10500 5800
+	10600 5700 10700 5800
 Entry Wire Line
-	10400 5800 10500 5900
-Entry Wire Line
-	10400 6100 10500 6200
+	10600 5800 10700 5900
 $Comp
 L VCC #PWR060
 U 1 1 56811080
@@ -1632,8 +1628,8 @@ F 3 "" H 9300 6750 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Entry Wire Line
-	10400 6800 10500 6900
-Text Label 10400 6800 2    60   ~ 0
+	10600 6800 10700 6900
+Text Label 10600 6800 2    60   ~ 0
 BLANK
 $Comp
 L RES R6
@@ -1647,8 +1643,8 @@ F 3 "" H 9800 6950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
-	10400 7000 10500 7100
-Text Label 10400 7000 2    60   ~ 0
+	10600 7000 10700 7100
+Text Label 10600 7000 2    60   ~ 0
 BLAKS
 $Comp
 L 555ЛИ1 D85
@@ -2554,9 +2550,9 @@ Wire Wire Line
 Wire Wire Line
 	9600 6200 9400 6200
 Wire Wire Line
-	9400 5700 10400 5700
+	9400 5700 10600 5700
 Wire Wire Line
-	10200 6100 10400 6100
+	10200 6100 10600 6100
 Wire Wire Line
 	8500 5200 8800 5200
 Wire Wire Line
@@ -2570,7 +2566,7 @@ Wire Wire Line
 	8200 5700 8800 5700
 Connection ~ 8600 5700
 Wire Wire Line
-	10400 5800 9500 5800
+	10600 5800 9500 5800
 Connection ~ 9500 5800
 Wire Wire Line
 	8800 6300 8600 6300
@@ -2666,13 +2662,13 @@ Wire Wire Line
 Wire Wire Line
 	8500 2700 8800 2700
 Wire Wire Line
-	9900 1700 10400 1700
+	9900 1700 10600 1700
 Wire Wire Line
-	10400 2600 9900 2600
+	10600 2600 9900 2600
 Wire Wire Line
-	10400 3600 9900 3600
+	10600 3600 9900 3600
 Wire Wire Line
-	10400 4500 9900 4500
+	10600 4500 9900 4500
 Wire Bus Line
 	8100 1100 8100 8600
 Wire Wire Line
@@ -2681,7 +2677,7 @@ Wire Wire Line
 	7600 3800 7600 4600
 Connection ~ 8700 4600
 Wire Bus Line
-	10500 1100 10500 8000
+	10700 1100 10700 8000
 Wire Bus Line
 	5700 1100 5700 12200
 Wire Wire Line
@@ -3015,7 +3011,7 @@ Wire Bus Line
 Wire Bus Line
 	1000 1100 1000 15150
 Wire Bus Line
-	1000 1100 10500 1100
+	1000 1100 10700 1100
 Wire Wire Line
 	8500 6900 8400 6900
 Wire Wire Line
@@ -3023,14 +3019,14 @@ Wire Wire Line
 Wire Wire Line
 	9200 6800 9100 6800
 Wire Wire Line
-	9400 6800 10400 6800
+	9400 6800 10600 6800
 Wire Wire Line
 	9600 7000 9500 7000
 Wire Wire Line
 	9500 7000 9500 6800
 Connection ~ 9500 6800
 Wire Wire Line
-	10000 7000 10400 7000
+	10000 7000 10600 7000
 Wire Wire Line
 	4800 14700 5500 14700
 Wire Wire Line
@@ -3477,4 +3473,110 @@ Wire Wire Line
 Wire Wire Line
 	2900 3500 2900 3700
 Connection ~ 2900 3700
+$Comp
+L GAL16V8 DD?
+U 1 1 57CD6B67
+P 4100 16900
+F 0 "DD?" H 4650 17050 60  0000 C CNN
+F 1 "GAL16V8" H 4650 15650 50  0000 C CNN
+F 2 "" H 4400 16650 60  0000 C CNN
+F 3 "" H 4400 16650 60  0000 C CNN
+	1    4100 16900
+	1    0    0    -1  
+$EndComp
+Text HLabel 4000 17100 0    60   Input ~ 0
+A14
+Text HLabel 4000 17200 0    60   Input ~ 0
+A15
+Text Label 3500 17300 0    60   ~ 0
+M0
+Text Label 3500 17400 0    60   ~ 0
+M1
+Text Label 3500 17500 0    60   ~ 0
+M2
+Text Label 3500 17600 0    60   ~ 0
+M3
+Text Label 3500 17800 0    60   ~ 0
+MAPMOD
+Text Label 3500 17700 0    60   ~ 0
+M4
+Entry Wire Line
+	3400 17700 3500 17800
+Entry Wire Line
+	3400 17600 3500 17700
+Entry Wire Line
+	3400 17500 3500 17600
+Entry Wire Line
+	3400 17300 3500 17400
+Entry Wire Line
+	3400 17400 3500 17500
+Entry Wire Line
+	3400 17200 3500 17300
+Text HLabel 3900 18000 0    60   Input ~ 0
+MAPBLK
+Wire Wire Line
+	3500 17300 4100 17300
+Wire Wire Line
+	3500 17400 4100 17400
+Wire Wire Line
+	3500 17500 4100 17500
+Wire Wire Line
+	3500 17600 4100 17600
+Wire Wire Line
+	3500 17700 4100 17700
+Wire Wire Line
+	3500 17800 4100 17800
+Wire Wire Line
+	4000 17100 4100 17100
+Wire Wire Line
+	4000 17200 4100 17200
+Wire Wire Line
+	3900 18000 4100 18000
+Text HLabel 5400 17700 2    60   Output ~ 0
+MAP14
+Text HLabel 5400 17600 2    60   Output ~ 0
+MAP15
+Text HLabel 5400 17500 2    60   Output ~ 0
+MAP16
+Text HLabel 5400 17400 2    60   Output ~ 0
+MAP17
+Wire Wire Line
+	5400 17600 5200 17600
+Wire Wire Line
+	5400 17500 5200 17500
+Wire Wire Line
+	5200 17400 5400 17400
+Wire Wire Line
+	5400 17300 5200 17300
+Text Label 5700 17000 2    60   ~ 0
+HIGHTY
+Wire Wire Line
+	5700 17000 5200 17000
+Text HLabel 4000 16900 0    60   Input ~ 0
+~DIS
+Text HLabel 5400 17200 2    60   Output ~ 0
+HIGHTZ
+Wire Wire Line
+	5200 17100 5800 17100
+Wire Wire Line
+	5400 17200 5200 17200
+Text HLabel 5400 17300 2    60   Output ~ 0
+MAP18
+Wire Wire Line
+	5400 17700 5200 17700
+Entry Wire Line
+	5800 16900 5700 17000
+Wire Wire Line
+	4000 16900 4100 16900
+Text HLabel 10400 6300 2    60   Output ~ 0
+MVI
+Entry Wire Line
+	10600 6100 10700 6200
+Text Label 10600 6100 2    60   ~ 0
+MVI
+Wire Wire Line
+	10400 6300 10300 6300
+Wire Wire Line
+	10300 6300 10300 6100
+Connection ~ 10300 6100
 $EndSCHEMATC

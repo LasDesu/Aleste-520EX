@@ -1099,4 +1099,84 @@ F 3 "" H 7200 1250 60  0000 C CNN
 	2    7200 1300
 	1    0    0    -1  
 $EndComp
+$Comp
+L GAL16V8 DD?
+U 1 1 57CC105B
+P 4000 -1600
+F 0 "DD?" H 4550 -1450 60  0000 C CNN
+F 1 "GAL16V8" H 4550 -2850 50  0000 C CNN
+F 2 "" H 4300 -1850 60  0000 C CNN
+F 3 "" H 4300 -1850 60  0000 C CNN
+	1    4000 -1600
+	1    0    0    -1  
+$EndComp
+Text HLabel 3600 -1400 0    60   Input ~ 0
+PROM0
+Text HLabel 3600 -1300 0    60   Input ~ 0
+PROM1
+Text HLabel 3600 -1200 0    60   Input ~ 0
+A14
+Text HLabel 3600 -1100 0    60   Input ~ 0
+A15
+Text HLabel 3600 -1000 0    60   Input ~ 0
+A0
+Text HLabel 3600 -900 0    60   Input ~ 0
+~MREQ
+Wire Wire Line
+	3600 -900 4000 -900
+Text HLabel 3600 -800 0    60   Input ~ 0
+~RD
+Wire Wire Line
+	3600 -800 4000 -800
+Text HLabel 3600 -500 0    60   Input ~ 0
+RAMDIS
+Wire Wire Line
+	3600 -700 4000 -700
+Wire Wire Line
+	3600 -1000 4000 -1000
+Wire Wire Line
+	3600 -1100 4000 -1100
+Wire Wire Line
+	3600 -1200 4000 -1200
+Wire Wire Line
+	3600 -1300 4000 -1300
+Wire Wire Line
+	3600 -1400 4000 -1400
+Text HLabel 5300 -800 2    60   Output ~ 0
+~RAMEN
+Text HLabel 5300 -1000 2    60   Output ~ 0
+BUFFER1
+Text HLabel 5300 -1100 2    60   Output ~ 0
+BUFFER0
+Text HLabel 5300 -900 2    60   Output ~ 0
+~ROMEN
+Wire Wire Line
+	5300 -800 5100 -800
+Wire Wire Line
+	5300 -1100 5100 -1100
+Wire Wire Line
+	5300 -1000 5100 -1000
+Wire Wire Line
+	5100 -900 5300 -900
+Text HLabel 3600 -1600 0    60   Input ~ 0
+~IORQ
+Wire Wire Line
+	3600 -1600 4000 -1600
+Wire Wire Line
+	3600 -500 4000 -500
+Text HLabel 3600 -700 0    60   Input ~ 0
+~WR
+Text HLabel 5300 -1500 2    60   Output ~ 0
+~IOWR
+Text HLabel 5300 -1400 2    60   Output ~ 0
+~IORD
+Text HLabel 5300 -1300 2    60   Output ~ 0
+~IO
+Wire Wire Line
+	5300 -1300 5100 -1300
+Wire Wire Line
+	5100 -1400 5300 -1400
+Wire Wire Line
+	5300 -1500 5100 -1500
+NoConn ~ 5100 -1200
 $EndSCHEMATC

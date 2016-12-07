@@ -2302,9 +2302,9 @@ Wire Wire Line
 Wire Wire Line
 	2800 8700 2700 8700
 Wire Wire Line
-	2700 8600 2700 8700
+	2700 8700 2700 8600
 Wire Wire Line
-	1300 8600 2700 8600
+	2700 8600 1300 8600
 Connection ~ 1800 9300
 Text HLabel 1300 8600 0    60   Input ~ 0
 VCLK
