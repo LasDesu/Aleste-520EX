@@ -393,13 +393,13 @@ F 3 "" H 7200 7500 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 7100 6600
-Text HLabel 7200 6700 2    60   Output ~ 0
+Text HLabel 7300 6700 2    60   Output ~ 0
 KK0
-Text HLabel 7200 6800 2    60   Output ~ 0
+Text HLabel 7300 6800 2    60   Output ~ 0
 KK1
-Text HLabel 7200 6900 2    60   Output ~ 0
+Text HLabel 7300 6900 2    60   Output ~ 0
 KK2
-Text HLabel 7200 7000 2    60   Output ~ 0
+Text HLabel 7300 7000 2    60   Output ~ 0
 KK3
 Text HLabel 7200 7700 2    60   Output ~ 0
 MK0
@@ -453,7 +453,7 @@ F 3 "" H 4100 9000 60  0000 C CNN
 	1    4100 9000
 	1    0    0    -1  
 $EndComp
-Text HLabel 7200 6500 2    60   Output ~ 0
+Text HLabel 7300 6500 2    60   Output ~ 0
 SINT*
 $Comp
 L 555ИР11 D39
@@ -492,28 +492,28 @@ HIGHT
 $Comp
 L 555ЛА3 D78
 U 4 1 567812C8
-P 6800 5700
-F 0 "D78" H 6800 5850 60  0000 C CNN
-F 1 "555ЛА3" H 6800 5450 50  0000 C CNN
-F 2 "MyLib_metric:DIP-14" H 6800 5650 60  0001 C CNN
-F 3 "" H 6800 5650 60  0000 C CNN
-	4    6800 5700
+P 6800 5600
+F 0 "D78" H 6800 5750 60  0000 C CNN
+F 1 "555ЛА3" H 6800 5350 50  0000 C CNN
+F 2 "MyLib_metric:DIP-14" H 6800 5550 60  0001 C CNN
+F 3 "" H 6800 5550 60  0000 C CNN
+	4    6800 5600
 	1    0    0    -1  
 $EndComp
 $Comp
 L VCC #PWR0131
 U 1 1 5678218D
-P 6400 5800
-F 0 "#PWR0131" H 6400 5900 30  0001 C CNN
-F 1 "VCC" H 6400 5900 30  0000 C CNN
-F 2 "" H 6400 5800 60  0000 C CNN
-F 3 "" H 6400 5800 60  0000 C CNN
-	1    6400 5800
+P 6400 5700
+F 0 "#PWR0131" H 6400 5800 30  0001 C CNN
+F 1 "VCC" H 6400 5800 30  0000 C CNN
+F 2 "" H 6400 5700 60  0000 C CNN
+F 3 "" H 6400 5700 60  0000 C CNN
+	1    6400 5700
 	0    -1   -1   0   
 $EndComp
 Text HLabel 5400 5800 2    60   Output ~ 0
 3CY
-Text HLabel 7200 5700 2    60   Output ~ 0
+Text HLabel 7200 5600 2    60   Output ~ 0
 ~3CY
 Text HLabel 5400 5600 2    60   Output ~ 0
 1CY
@@ -628,7 +628,7 @@ Text HLabel 1200 4100 0    60   Input ~ 0
 XTAL
 Text HLabel 3800 6200 0    60   Input ~ 0
 3CY
-Text HLabel 6300 5700 0    60   Input ~ 0
+Text HLabel 6300 5600 0    60   Input ~ 0
 3CY
 Text HLabel 3100 4000 2    60   Output ~ 0
 8M
@@ -828,11 +828,11 @@ Connection ~ 1200 4500
 Wire Wire Line
 	2400 3600 3300 3600
 Wire Wire Line
-	3300 3700 2400 3700
+	2400 3700 3300 3700
 Wire Wire Line
-	3300 3800 2400 3800
+	2400 3800 3300 3800
 Wire Wire Line
-	3300 3900 2400 3900
+	2400 3900 3300 3900
 Wire Wire Line
 	900  7200 1400 7200
 Wire Wire Line
@@ -978,17 +978,17 @@ Connection ~ 5900 7400
 Wire Wire Line
 	7200 7500 7100 7500
 Wire Wire Line
-	7100 6300 7200 6300
+	7100 6300 7300 6300
 Wire Wire Line
-	7200 6400 7100 6400
+	7100 6400 7300 6400
 Wire Wire Line
-	7200 7000 7100 7000
+	7300 7000 7100 7000
 Wire Wire Line
-	7100 6900 7200 6900
+	7100 6900 7300 6900
 Wire Wire Line
-	7100 6800 7200 6800
+	7100 6800 7300 6800
 Wire Wire Line
-	7100 6700 7200 6700
+	7100 6700 7300 6700
 Wire Wire Line
 	5300 7700 7200 7700
 Connection ~ 5300 6700
@@ -1019,7 +1019,7 @@ Wire Wire Line
 	3800 8100 4100 8100
 Connection ~ 3800 7900
 Wire Wire Line
-	7100 6500 7200 6500
+	7100 6500 7300 6500
 Wire Wire Line
 	3800 6200 4000 6200
 Wire Wire Line
@@ -1066,11 +1066,11 @@ Connection ~ 1200 6500
 Wire Wire Line
 	1200 8200 1400 8200
 Wire Wire Line
-	6300 5700 6500 5700
+	6300 5600 6500 5600
 Wire Wire Line
-	7100 5700 7200 5700
+	7100 5600 7200 5600
 Wire Wire Line
-	6400 5800 6500 5800
+	6400 5700 6500 5700
 Connection ~ 2900 1900
 Wire Wire Line
 	3800 2400 4000 2400
@@ -1220,9 +1220,9 @@ Text Label 5900 3400 2    60   ~ 0
 V13
 Entry Wire Line
 	6000 1500 6100 1600
-Text HLabel 7200 6400 2    60   Output ~ 0
+Text HLabel 7300 6400 2    60   Output ~ 0
 HY*
-Text HLabel 7200 6300 2    60   Output ~ 0
+Text HLabel 7300 6300 2    60   Output ~ 0
 SYNC*
 Text HLabel 3100 4100 2    60   Output ~ 0
 4M
@@ -1258,4 +1258,33 @@ Wire Wire Line
 Wire Wire Line
 	2700 4300 2700 3900
 Connection ~ 2700 3900
+$Comp
+L CAP C8
+U 1 1 586F6BCD
+P 7400 6000
+F 0 "C8" H 7400 6125 50  0000 C CNN
+F 1 "1н" H 7400 5875 50  0000 C CNN
+F 2 "MyLib_metric:C_Disc_D7.5_P2.5" H 7400 5950 60  0001 C CNN
+F 3 "" H 7400 5950 60  0000 C CNN
+	1    7400 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 6000 7200 6000
+Wire Wire Line
+	7200 6000 7200 6400
+Connection ~ 7200 6400
+$Comp
+L GND #PWR0136
+U 1 1 586F77A2
+P 7600 6000
+F 0 "#PWR0136" H 7600 6000 30  0001 C CNN
+F 1 "GND" H 7600 5930 30  0001 C CNN
+F 2 "" H 7600 6000 60  0000 C CNN
+F 3 "" H 7600 6000 60  0000 C CNN
+	1    7600 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7600 6000 7500 6000
 $EndSCHEMATC
