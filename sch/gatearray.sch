@@ -731,8 +731,6 @@ F 3 "" H 9900 6050 60  0000 C CNN
 	2    9900 6100
 	1    0    0    -1  
 $EndComp
-Text Label 8200 5700 0    60   ~ 0
-HIGHT
 Text HLabel 8500 6200 0    60   Input ~ 0
 2M
 Text HLabel 8500 5200 0    60   Input ~ 0
@@ -1639,8 +1637,6 @@ F 3 "" H 3900 13800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
-	8100 5600 8200 5700
-Entry Wire Line
 	10400 5700 10500 5800
 Entry Wire Line
 	10400 5800 10500 5900
@@ -2047,7 +2043,7 @@ Wire Wire Line
 	8700 5800 8700 5200
 Connection ~ 8700 5200
 Wire Wire Line
-	8200 5700 8800 5700
+	8500 5700 8800 5700
 Connection ~ 8600 5700
 Wire Wire Line
 	10400 5800 9500 5800
@@ -3163,4 +3159,6 @@ Text HLabel 3700 9900 0    60   Input ~ 0
 MVI
 Wire Wire Line
 	3700 9900 4000 9900
+Text HLabel 8500 5700 0    60   Input ~ 0
+HIGHT
 $EndSCHEMATC
